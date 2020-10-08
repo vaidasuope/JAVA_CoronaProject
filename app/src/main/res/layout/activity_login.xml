@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--encoding utf-8 yra koduote-->
+<!--Linear Layout - paprasciaucias linijinis isdestymas, sluoksniuotas pyragas:)
+reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pasirinkti-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+    <!--reikia nusirodyti kokia bus musu lango orientacija, kad nepasisleptu elementai, nenusislinktu-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/app_vardas"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="43dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="@string/login_username"
+        android:paddingBottom="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="@string/login_password"
+        android:paddingBottom="25dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_checkbox" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/login"
+        android:text="@string/login_login_btn"
+        android:layout_gravity="center"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/register"
+        android:text="@string/login_register_btn"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
