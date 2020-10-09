@@ -6,7 +6,8 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBack"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
     <!--reikia nusirodyti kokia bus musu lango orientacija, kad nepasisleptu elementai, nenusislinktu-->
 
     <TextView
@@ -20,7 +21,7 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="43dp"
+        android:textSize="44dp"
         android:textStyle="bold" />
 
     <ImageView
@@ -38,6 +39,7 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:layout_marginTop="15dp"
         android:hint="@string/login_password"
         android:paddingBottom="25dp" />
@@ -50,28 +52,35 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login_checkbox" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/login"
-        android:text="@string/login_login_btn"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="10dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/register"
-        android:text="@string/login_register_btn"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="5dp"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/login"
+            android:text="@string/login_login_btn" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/register"
+            android:text="@string/login_register_btn" />
+
     </LinearLayout>
 
 </LinearLayout>
