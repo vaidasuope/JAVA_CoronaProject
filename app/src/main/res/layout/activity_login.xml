@@ -30,6 +30,7 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
         android:src="@drawable/logo" />
 
     <EditText
+        android:id="@+id/usernametext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -37,6 +38,7 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
         android:paddingBottom="25dp" />
 
     <EditText
+        android:id="@+id/passwordtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -64,6 +66,7 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
         android:weightSum="2">
 
         <Button
+            android:id="@+id/loginbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
