@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
 
     EditText usernametext, passwordtext;
-    Button loginbutton;
+    Button loginbutton, registerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,23 +30,39 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //cia bus vykdomas kodas po button paspausdimo
-               /* Toast.makeText(LoginActivity.this,
-                        "Prisijungimo vardas:" + usernametext.getText().toString() + "\n" +
-                             "Slaptazodis:" + passwordtext.getText().toString(),
-                        Toast.LENGTH_SHORT).show();*/
-               if (Validation.isValidUsername(usernametext.getText().toString())) {
-                   //ketinimas pereiti i paieskos langa
-                   Intent goToSearchActivity=new Intent(LoginActivity.this,
-                           SearchActivity.class);
-                   startActivity(goToSearchActivity);
-               }
-               else {//kai duomenys neatitinka sablono/reikalavimo
-                   usernametext.setError(getResources().getString(R.string.login_invalid_username));//cia taip prieinam prie susikurtu savo values, kaip su xml
-                   usernametext.requestFocus();//peles kursoriu sufokusuoja ties kuriuo yra klaida ir ismeta pranesima
 
-               }
+                if (!Validation.isValidUsername(usernametext.getText().toString())) {
+                    usernametext.setError(getResources().getString(R.string.login_invalid_username));
+                    usernametext.requestFocus();
+                }
+                if (!Validation.isValidPassword(passwordtext.getText().toString())) {
+                    passwordtext.setError(getResources().getString(R.string.login_invalid_username));
+                    passwordtext.requestFocus();
+                }
+                else {
+                    Intent goToSearchActivity = new Intent(LoginActivity.this,
+                            SearchActivity.class);
+                    startActivity(goToSearchActivity);
+
+                    Toast.makeText(LoginActivity.this, getResources().getString(R.string.login_success),
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
+        Button registerButton = (Button) findViewById(R.id.registerButton);
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RegisterActivity();
+            }
+        });
+
+    }
+
+    public void RegisterActivity() {
+        Intent goRegisterActivity = new Intent(LoginActivity.this,
+                RegisterActivity.class);
+        startActivity(goRegisterActivity);
     }
 
 }

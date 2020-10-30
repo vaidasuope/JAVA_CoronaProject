@@ -6,4 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.corona.coronazp20t.SearchActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

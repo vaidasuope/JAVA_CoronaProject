@@ -2,10 +2,17 @@
     <string name="app_name">CoronaZP20T</string>
     <string name="app_title">Infection online status</string>
     <string name="app_vardas">Infection Online Status</string>
-    <string name="login_username">Username</string>
-    <string name="login_password">Password</string>
+    <string name="login_username">Username:</string>
+    <string name="login_password">Password:</string>
     <string name="login_checkbox">Remember me</string>
     <string name="login_login_btn">Login</string>
     <string name="login_register_btn">Register</string>
     <string name="login_invalid_username">Wrong username or/and password</string>
+    <string name="register">Please register. Enter you data bellow:</string>
+    <string name="register_username">Username:</string>
+    <string name="register_email">E-mail:</string>
+    <string name="register_password">Password:</string>
+    <string name="login_success">Login is successful!</string>
+    <string name="invalid_email">Email is not valid</string>
+    <string name="new_user">New user registered successful!</string>
 </resources>
