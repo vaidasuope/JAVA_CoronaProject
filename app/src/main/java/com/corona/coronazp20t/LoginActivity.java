@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                     usernametext.setError(getResources().getString(R.string.login_invalid_username));
                     usernametext.requestFocus();
                 }
-                if (!Validation.isValidPassword(passwordtext.getText().toString())) {
+                else if (!Validation.isValidPassword(passwordtext.getText().toString())) {
                     passwordtext.setError(getResources().getString(R.string.login_invalid_username));
                     passwordtext.requestFocus();
                 }
