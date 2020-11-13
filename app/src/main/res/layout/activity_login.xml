@@ -51,6 +51,7 @@ reiskia, kad naujas elementas bus vienas po kitu, bet nepamirsti orientacijos pa
         android:layout_height="10dp" />
 
     <CheckBox
+        android:id="@+id/rememberMe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login_checkbox" />
