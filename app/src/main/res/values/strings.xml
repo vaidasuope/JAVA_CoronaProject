@@ -12,7 +12,7 @@
     <string name="register_username">Username:</string>
     <string name="register_email">E-mail:</string>
     <string name="register_password">Password:</string>
-    <string name="login_success">Login is successful!</string>
+    <string name="login_success">Login is successful! Well done!</string>
     <string name="invalid_email">Email is not valid</string>
     <string name="new_user">New user registered successful!</string>
 </resources>
