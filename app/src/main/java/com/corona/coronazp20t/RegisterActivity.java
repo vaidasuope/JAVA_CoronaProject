@@ -50,9 +50,9 @@ public class RegisterActivity extends AppCompatActivity {
                     //public User(String username, String password, String email)
                     User user=new User(registerUsername.getText().toString(),registerPassword.getText().toString(),registerEmail.getText().toString());
                     Toast.makeText(RegisterActivity.this,
-                            "Username:"+ user.getUsername()+"\n"+
-                                    "Password:"+user.getPassword()+"\n"+
-                                    "Email:"+user.getEmail(),
+                            "Username:"+ user.getUsernameForRegistration()+"\n"+
+                                    "Password:"+user.getPasswordForRegistration()+"\n"+
+                                    "Email:"+user.getEmailForRegistration(),
                             Toast.LENGTH_SHORT).show();
                 }
             }
