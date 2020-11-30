@@ -15,4 +15,6 @@
     <string name="login_success">Login is successful! Well done!</string>
     <string name="invalid_email">Email is not valid</string>
     <string name="new_user">New user registered successful!</string>
+    <string name="search_loading_data">Please wait for COVID-19 data to be displayed.</string>
+    <string name="search_error_reading_data">Could not read data form API. For more information:</string>
 </resources>
