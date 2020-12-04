@@ -17,4 +17,6 @@
     <string name="new_user">New user registered successful!</string>
     <string name="search_loading_data">Please wait for COVID-19 data to be displayed.</string>
     <string name="search_error_reading_data">Could not read data form API. For more information:</string>
+    <string name="search_no_results">No search results found for query: </string>
+    <string name="search_found_entries_from_api">Found total numbers of corona entries: </string>
 </resources>

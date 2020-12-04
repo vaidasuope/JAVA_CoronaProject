@@ -6,4 +6,6 @@
     <color name="colorBack">#ABE3BB</color>
     <color name="login">#05CF3F</color>
     <color name="register">#058FCF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#57595A</color>
 </resources>
