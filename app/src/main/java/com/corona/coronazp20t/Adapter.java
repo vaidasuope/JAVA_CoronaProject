@@ -1,6 +1,7 @@
 package com.corona.coronazp20t;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -69,9 +70,11 @@ public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
 
         // Click event for all items
+        //cia pereinam i new entry activity, kadanmgi adapteris neturi atskiro lango, tai rasom contex
         @Override
         public void onClick(View v) {
-            Toast.makeText(context, "You clicked an item", Toast.LENGTH_SHORT).show();
+            Intent goToNewEntryActivity = new Intent(context,NewEntryActivity.class);
+            context.startActivity(goToNewEntryActivity);
         }
     }
 }
